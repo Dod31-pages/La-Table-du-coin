@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>La table du coin</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<header>
+
+    <a href="#accueil" class="logo"
+        style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none;">
+        <svg width="42" height="42" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Cercle extérieur -->
+            <circle cx="32" cy="32" r="30" fill="#2C3E35" stroke="#D4A373" stroke-width="2.5" />
+            <!-- Cloche de service -->
+            <path d="M16 38C16 29.1634 23.1634 22 32 22C40.8366 22 48 29.1634 48 38H16Z" stroke="#FAF6F0"
+                stroke-width="2.5" stroke-linejoin="round" />
+            <circle cx="32" cy="18.5" r="2.5" fill="#D4A373" />
+            <!-- Plateau -->
+            <line x1="12" y1="42" x2="52" y2="42" stroke="#D4A373" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+        <span
+            style="font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #FAF6F0; letter-spacing: 0.5px;">
+            La Table du Coin
+        </span>
+
+        <nav> <a href="#accueil">Accueil</a> <a href="#carte">Carte</a> <a href="#leresto">Le Resto</a> <a
+                href="#contact">Contact</a> </nav>
+
+</header>
+
+</html>
+
+<body>
+    <section class="firstpage">
+
+        <div class="text1">
+            <h1>La Table du coin</h1><br><br>
+            <p>Une cuisine authentique & des produits de saison</p>
+            <a href="#carte" class="buttoncarte">Voir la carte</a>
+        </div>
+
+    </section>
+
+    <section id="carte" class="carte">
+        <h1>Notre carte</h1>
+        <table>
+            <tr class="tabtitle">
+                <td><b>Entrées</b></td>
+                <td><b>Plats</b></td>
+                <td><b>Desserts</b></td>
+            </tr>
+            <tr>
+                <td>Velouté de potimarron 8€</td>
+                <td>Paleron braisé 18€</td>
+                <td>Tarte tatin 7€</td>
+            </tr>
+            <tr>
+                <td>Terrine maison 9€</td>
+                <td>Pavé de saumon 20€</td>
+                <td>Mousse choc 6€</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="leresto" class="leresto">
+        <h1>Le Restaurant</h1><br>
+        <p>Depuis 2005, nous vous accueillons dans un cadre chaleureux...</p>
+        <div class="restoimg">
+            <div><img src="images/ambiance.avif"></div>
+            <div><img src="images/cocktails.avif"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>Réserver une table</h1>
+
+        <div class="formulaire">
+            <form method="post" action="">
+                <div class="colonne">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="mail">E-mail :</label>
+                    <input type="email" id="mail" name="mail" required>
+
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required>
+                </div>
+
+                <div class="colonne">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="heure">Heure :</label>
+                    <input type="time" id="heure" name="heure" required>
+
+                    <label for="couverts">Couverts :</label>
+                    <input type="number" min="1" id="couverts" name="couverts" required>
+                </div>
+
+                <div class="full-width">
+                    <label for="message">Message / Demandes particulières :</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="full-width">ENVOYER</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<footer>
+    Horaires : Mar-Dim 12h-14h30 / 19h-22h30|Adresse : 12, Rue des Gourmets <br>
+    © 2026 La table du Coin - Tous droits réservés
+</footer>

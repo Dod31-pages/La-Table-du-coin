@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("images/plat.avif");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+
+}
+
+header, footer {
+    background-color: #2C3E35;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 80px; 
+    color: #f5ebdc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.firstpage{
+    height:720px;
+}
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: #f5ebdc;
+    text-decoration: none;
+    margin-left: 20px; 
+}
+
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    padding: 0 15px;
+    font-size: 4.5em;
+    position:relative;
+}
+
+p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 1px;
+    font-size:2.2em;
+}
+
+.buttoncarte {
+    display: block;
+    width: fit-content;
+    margin: 100px auto;
+    border-radius: 15px;
+    background-color: #2C3E35;
+    font-family: "Roboto", sans-serif;
+    padding: 20px 80px;
+    text-decoration: none;
+    color: #f5ebdc;
+    font-size: 1.8em;
+}
+
+.buttoncarte:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.text1{
+    color:#f5ebdc;
+    text-align:center;
+    padding-top:200px;
+    position:relative;
+}
+
+.carte{
+    padding-top:50px;
+    color:#2C3E35;
+    background-color: #f5ebdc;
+    height:800px;
+}
+
+.leresto{
+    padding-top:50px;
+    color:#f5ebdc;
+    height:800px;
+}
+
+.contact{
+    background-color: #f5ebdc;
+    height:720px;
+    color:#2C3E35;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 80px auto;
+    width: 100%;       
+    max-width: 800px;    
+    min-height: 400px;
+    table-layout: fixed;
+    font-size:1.5em;
+}
+
+.tabtitle{
+    font-size:1.4em;
+}
+
+td, th, tr {
+    border-style: solid;
+    padding: 10px;
+    word-wrap: break-word;  
+}
+
+.restoimg {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    padding: 80px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.restoimg img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.contact{
+    padding-top:50px;
+    height:800px;
+}
+
+.formulaire {
+    max-width: 750px;
+    max-height:500px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: "Roboto", sans-serif;
+}
+
+.formulaire form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    gap: 25px 40px;                  
+}
+
+.formulaire .colonne {
+    display: flex;
+    flex-direction: column;          
+}
+
+.formulaire .full-width {
+    grid-column: 1 / -1;         
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire label {
+    color: #2C3E35;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.formulaire input,
+.formulaire textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    background-color: #FAF6F0;
+}
+
+.formulaire textarea {
+    resize: none;                
+}
+
+.formulaire button {
+    margin: 55px auto 0 auto;       
+    padding: 12px 50px;
+    background-color: #2C3E35;
+    color: #FAF6F0;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    position:relative;
+
+}
+
+.formulaire button:hover {
+    opacity: 0.8;
+}
+
+footer{
+    font-size:1.5em;
+    text-align:center;
+    padding-top:15px;
+}
+/* Adaptation téléphone : repasse sur 1 seule colonne */
+@media (max-width: 768px) {
+    .formulaire {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .formulaire form {
+        grid-template-columns: 1fr; /* 1 seule colonne sur mobile */
+        gap: 10px;
+    }
+}
+/* =========================================
+   ADAPTATION TÉLÉPHONE (écrans < 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Place le logo au-dessus et le menu en dessous */
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px; /* Centre et resserre les liens sur mobile */
+        font-size: 0.95em;
+    }
+
+    .restoimg {
+        grid-template-columns: 1fr; /* Passe de 3 colonnes à 1 seule colonne verticale */
+        gap: 25px;
+        padding: 40px 20px;
+    }
+
+    .buttoncarte {
+        font-size: 1.2em;
+        padding: 10px 30px;
+    }
+
+    td, th, tr {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+}
