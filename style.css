@@ -248,14 +248,14 @@ footer{
     .restoimg {
         grid-template-columns: 1fr; /* Passe de 3 colonnes à 1 seule colonne verticale */
         gap: 25px;
-        padding: 40px 20px;
+        padding: 40px 25px;
     }
 
     .leresto{
         height:1500px;
     }
     .buttoncarte {
-        font-size: 1em;
+        font-size: 2em;
         padding: 10px 30px;
     }
 
