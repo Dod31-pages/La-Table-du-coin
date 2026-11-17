@@ -242,7 +242,7 @@ footer{
 
     nav a {
         margin: 0 10px; /* Centre et resserre les liens sur mobile */
-        font-size: 0.85em;
+        font-size: 0.95em;
     }
 
     .restoimg {
@@ -251,6 +251,9 @@ footer{
         padding: 40px 20px;
     }
 
+    .leresto{
+        height:1000px;
+    }
     .buttoncarte {
         font-size: 1em;
         padding: 10px 30px;
