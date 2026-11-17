@@ -250,7 +250,9 @@ footer{
         gap: 25px;
         padding: 40px 25px;
     }
-
+    .restoimg img:nth-child(2) {
+        display: none;
+    }
     .leresto{
         height:1500px;
     }
