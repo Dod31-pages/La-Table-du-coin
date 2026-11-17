@@ -250,12 +250,14 @@ footer{
         gap: 25px;
         padding: 40px 25px;
     }
-    .restoimg img:nth-child(2) {
-        display: none;
-    }
     .leresto{
-        height:1500px;
+        height:1400px;
     }
+
+    .contact{
+        height:1000px;
+    }
+    
     .buttoncarte {
         font-size: 2em;
         padding: 10px 30px;
